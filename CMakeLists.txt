@@ -27,6 +27,17 @@ add_executable(etp
 
 target_link_libraries(etp raylib)
 
+# Xcode 26 beta moved libc++ headers into the SDK only; the compiler's
+# built-in search path (/usr/include/c++/v1) is empty. Point it at the SDK.
+if(APPLE)
+    execute_process(
+        COMMAND xcrun --show-sdk-path
+        OUTPUT_VARIABLE APPLE_SDK_PATH
+        OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
+    target_compile_options(etp PRIVATE -isystem ${APPLE_SDK_PATH}/usr/include/c++/v1)
+endif()
+
 # Hide the console window on Windows release builds
 if(WIN32)
     set_target_properties(etp PROPERTIES WIN32_EXECUTABLE TRUE)

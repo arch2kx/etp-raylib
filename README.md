@@ -7,28 +7,16 @@
 
 ## How to Build
 
-#### First time
+#### First time (Downloads raylib, takes ~1 min)
 
 ```bash
-cmake --B build
+cmake -B build
 ```
 
-#### Build 
+#### Build & Run
 
 ```bash
-cmake --build build
-```
-
-#### Run 
-
-```bash
-./build/etp
-```
-
-## After the first configure
-
-```bash
-cmake --build && ./build/etp
+cmake --build build && ./build/etp
 ```
 
 
