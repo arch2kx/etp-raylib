@@ -1,5 +1,5 @@
 # Eden Treaty Pandemonium
-*A simple Space Invaders/Touhou game written in C++*
+*A simple Blue Archive-themed Space Invaders/Touhou style game written in C++.*
 
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
@@ -25,10 +25,12 @@ cmake --build build
 ./build/etp
 ```
 
-## After first configure
+## After the first configure
 
 ```bash
 cmake --build && ./build/etp
 ```
 
-I made this program primarily to learn how game programming works with different languages.
+
+## Notes
+I made this program primarily to learn how game programming works with different languages. I had an original pygame version but this one is much better.
