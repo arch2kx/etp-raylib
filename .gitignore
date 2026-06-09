@@ -1,0 +1,10 @@
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.d
+etp
+etp.exe
+_deps/
