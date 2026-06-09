@@ -40,7 +40,7 @@ endif()
 
 # Hide the console window on Windows release builds
 if(WIN32)
-    set_target_properties(etp PROPERTIES WIN32_EXECUTABLE TRUE)
+    set_target_properties(etp PROPERTIES WIN32_EXECUTABLE FALSE)
 endif()
 
 # Copy assets next to the binary so relative paths work on all platforms
